@@ -150,12 +150,12 @@
         }
 
         .cursor {
-          position: absolute;
+          position: fixed; 
           width: 20px;
           height: 20px;
           background-color: white;
           border-radius: 50%;
-          pointer-events: none; /* Allows the cursor to pass through the element */
+          pointer-events: none;
           transform: translate(-50%, -50%);
           transition: transform 0.2s, opacity 0.2s;
           animation: scaleUp 0.2s ease-in-out infinite alternate;
