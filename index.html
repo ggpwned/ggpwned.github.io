@@ -96,8 +96,10 @@
 				  width: 40px;
 				  height: 40px;
 				  border-radius: 50%;
-				  margin: 0 auto; 
+				  display: block; /* Ensure it's a block-level element for margin auto to work */
+				  margin: 0 auto; /* Center the avatar horizontally */
 				}
+
 				.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}
 				.chatlog__message-primary{grid-column:2;min-width:0}
 				.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
