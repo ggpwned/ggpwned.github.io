@@ -83,12 +83,36 @@
 				  margin-bottom: 1rem; /* Keep the bottom margin as per your requirement */
 				}
 
-				.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}
-				.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}
-				.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}
-				.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}
-				.chatlog__message:hover{background-color:#32353b}
-				.chatlog__message:hover
+				.chatlog__message-container {
+				  background-color: transparent;
+				  transition: background-color 1s ease;
+				  display: block; /* Ensure it's a block-level element for margin auto to work */
+				  margin: 0 auto; /* Center it horizontally */
+				}
+
+				/* Define other styles for .chatlog__message-container--highlighted and .chatlog__message-container--pinned */
+				.chatlog__message-container--highlighted {
+				  background-color: rgba(114, 137, 218, 0.2);
+				}
+
+				.chatlog__message-container--pinned {
+				  background-color: rgba(249, 168, 37, 0.05);
+				}
+
+				/* Styles for .chatlog__message and hover effect */
+				.chatlog__message {
+				  display: grid;
+				  grid-template-columns: auto 1fr;
+				  padding: 0.15rem 0;
+				  direction: ltr;
+				  unicode-bidi: bidi-override;
+				}
+
+				/* Hover effect */
+				.chatlog__message:hover {
+				  background-color: #32353b;
+				}
+
 				.chatlog__short-timestamp{display:block}
 				.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}
 				.chatlog__message-aside {
