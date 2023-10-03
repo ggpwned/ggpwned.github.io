@@ -69,9 +69,15 @@
 				.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}
 				.preamble__entry--small{font-size:1rem}
 				
-				
-				.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}
-				
+								
+				.chatlog {
+				  padding: 1rem 0;
+				  width: 100%;
+				  border-top: 1px solid rgba(255, 255, 255, 0.1);
+				  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				  margin: 0 auto; /* Center the chatlog horizontally */
+				}
+								
 				.chatlog__message-group {
 				  margin: 0 auto; /* Center the message group horizontally */
 				  margin-bottom: 1rem; /* Keep the bottom margin as per your requirement */
@@ -149,8 +155,8 @@
 				.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 				.chatlog__embed {
 				  display: flex;
-				  margin: 0.3rem auto;
-				  max-width: 520px;
+				  justify-content: center; 
+				  max-width: 100%; 
 				}
 
 				.chatlog__embed-color-pill {
@@ -251,6 +257,7 @@
 				  color: #dcddde;
 				  font-weight: 500;
 				}
+
 
 				.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}
 				.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}
